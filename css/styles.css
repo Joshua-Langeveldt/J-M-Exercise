@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: greenyellow;
+    background-color: transparent; /* Optional: Set the background color for the selected text */
+}
+
+/*Universal Selector*/
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+
+h1,h3,h4,h5,h6,p{
+    text-align: center;
+    padding-top: 20px;
+    color:rgb(14, 13, 13);
+}
+
+h2 {
+    padding-top: 20px;
+    text-align: center;
+    color:red;
+}
+
+
+
+/*Table Styling*/
+
+.abletay {
+
+    border: burlywood solid 2px;
+    margin: auto;
+    
+}
+
+.abletay-pacingsay{
+   margin-top: 20px;
+}
+
+tr:first-child{
+    background-color: greenyellow;
+}
+
+td:hover:first-child{
+    color:crimson
+}
+
+
+
+/*NavBar Styling*/
+
+.nav,a{
+    text-decoration: none;
+    padding:1rem;
+color: aliceblue;    
+background-color: black;
+display: flex;
+justify-content: center;
+}
+
+nav a:visited{
+    color: purple;
+}
+
+/*Styling Content*/
+#main{
+    margin:30px;
+    text-align: center;
+}
+
+aside{
+    border: dotted 10px;
+    padding: 20px;
+    margin: 20px;
+    color:dimgrey;
+}
+
+aside + button {
+    color: #6495ED;
+}
+
+#hover:hover h3{
+    color: red;
+    display: block;
+}
+
+h3{
+    display: none;
+    background-color: yellow;
+    padding:2rex;
+}
+
+i:first-child{
+ color:peru;
+}
+
+.paragraph::first-line {
+    color: red;
+}
+
+.paragraph::first-letter {
+    color:blue;
+}
+
+article::before,
+article::after {
+
+    content: url(https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif);
+}
